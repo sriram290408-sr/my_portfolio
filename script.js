@@ -18,7 +18,6 @@ function openProject(project) {
   window.open(projects[project], "_blank");
 }
 
-// EMAIL FORM
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
