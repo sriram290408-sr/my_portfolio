@@ -1,6 +1,6 @@
 function openLink(platform) {
   const links = {
-    github: "https://github.com/sriram290408-sr.com",
+    github: "https://github.com/sriram290408-sr",
     linkedin: "https://www.linkedin.com/in/sri-ram-679920350/",
     hackerrank: "https://www.hackerrank.com/profile/sriram290408",
   };
