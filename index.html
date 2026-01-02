@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sriram | Full Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- HERO -->
+    <header class="hero"></header>
+
+    <!-- ABOUT -->
+    <section class="section center">
+      <img src="./assets/sriram.jpg" alt="Sriram" class="profile-img" />
+
+      <div class="about-text">
+        <p>
+          I am an aspiring <strong>Full Stack Developer</strong> currently
+          training at <strong>Freshworks STS Software Academy</strong>, where I
+          transitioned from a non-technical background into software development
+          through disciplined, hands-on learning. I have experience in frontend
+          technologies (HTML, CSS, JavaScript – basics) and backend development
+          using <strong>Python with FastAPI</strong>, along with working
+          knowledge of <strong>PostgreSQL</strong> and <strong>MongoDB</strong>.
+          I am highly motivated, adaptable, and committed to building scalable,
+          real-world applications that add value to organizations.
+        </p>
+      </div>
+    </section>
+
+    <!-- SOCIAL LINKS -->
+    <section class="section center">
+      <h2>Social Profiles</h2>
+
+      <div class="social-cards">
+        <div onclick="openLink('github')">
+          <img src="./assets/github.png" class="social-img" alt="GitHub" />
+          <p>GitHub</p>
+        </div>
+
+        <div onclick="openLink('linkedin')">
+          <img src="./assets/linkedin.png" class="social-img" alt="LinkedIn" />
+          <p>LinkedIn</p>
+        </div>
+
+        <div onclick="openLink('hackerrank')">
+          <img
+            src="./assets/hackerrank.png"
+            class="social-img"
+            alt="HackerRank"
+          />
+          <p>HackerRank</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section center">
+      <h2>Projects</h2>
+
+      <div class="project-cards">
+        <div class="project-card" onclick="openProject('sp')">
+          <h3>SP Apartments</h3>
+          <p>Apartment management & services platform(DCA)</p>
+        </div>
+
+        <div class="project-card" onclick="openProject('viberise')">
+          <h3>Viberise</h3>
+          <p>Product selling site</p>
+        </div>
+
+        <div class="project-card" onclick="openProject('artc')">
+          <h3>ARTC</h3>
+          <p>Anti-Ragging and Teasing Committee</p>
+        </div>
+
+        <div class="project-card" onclick="openProject('eduverse')">
+          <h3>EduVerse</h3>
+          <p>Student data and mark management system</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section">
+      <h2 class="center">Contact Me</h2>
+
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="from_name" placeholder="Your Name" required />
+        <input type="email" name="reply_to" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>© 2026 Sriram | Full Stack Developer</footer>
+
+    <!-- EMAILJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("etQYBtXonULJ8y80R");
+      })();
+    </script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
