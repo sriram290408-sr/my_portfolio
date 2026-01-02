@@ -5,7 +5,6 @@ body {
   color: #1f2937;
 }
 
-/* HERO */
 .hero {
   height: 400px;
   background: url("./assets/header.png") center/cover;
@@ -29,7 +28,33 @@ body {
   color: #dbeafe;
 }
 
-/* SECTIONS */
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
 .section {
   max-width: 900px;
   margin: auto;
@@ -40,7 +65,6 @@ body {
   text-align: center;
 }
 
-/* PROFILE */
 .profile-img {
   width: 150px;
   height: 150px;
@@ -49,7 +73,6 @@ body {
   border: 4px solid #1d7a85;
 }
 
-/* ABOUT */
 .about-text {
   margin-top: 30px;
   background: #fff;
@@ -59,7 +82,6 @@ body {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* SOCIAL */
 .social-cards {
   display: flex;
   justify-content: center;
@@ -96,7 +118,6 @@ body {
   transform: scale(1.15);
 }
 
-/* PROJECTS */
 .project-cards {
   display: flex;
   justify-content: center;
@@ -137,8 +158,6 @@ body {
   color: #ffffff;
 }
 
-
-/* CONTACT */
 .contact-form {
   max-width: 550px;
   margin: auto;
@@ -168,7 +187,6 @@ button:hover {
   background: #092e46;
 }
 
-/* FOOTER */
 footer {
   background: #0b3c5d;
   color: #e5e7eb;
