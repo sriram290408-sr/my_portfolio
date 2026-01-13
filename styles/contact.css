@@ -12,22 +12,25 @@
 .page h2 {
   color: #38bdf8;
   margin-bottom: 20px;
+  font-size: larger;
+  text-align:left ;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
+  gap: 50px;
 }
 
 .card {
   background: #0f172a;
   border: 1px solid #1e293b;
   border-radius: 16px;
-  padding: 25px;
+  padding: 15px;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease,
+    border-color 0.35s ease;
 }
 
 .card:hover {
@@ -51,22 +54,54 @@
   color: #ffffff;
   font-weight: 500;
   font-size: large;
-  transition: transform 0.35s ease;
 }
 
 .card small {
   color: #ffffff;
   font-size: medium;
-  transition: transform 0.35s ease;
-}
-
-.card:hover p,
-.card:hover small {
-  transform: translateY(-4px);
 }
 
 .img-alter {
   filter: invert(1) brightness(1.2);
+}
+
+.social-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 16px 20px;
+
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.social-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+.social-btn:hover {
+  background: #020617;
+  border-color: #38bdf8;
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.35);
+  transform: translateY(-4px);
+}
+
+.social-btn:active {
+  transform: scale(0.96);
 }
 
 footer {

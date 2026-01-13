@@ -1,142 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skills | Sriram</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills | Sriram</title>
 
-  <link rel="icon" href="../assets/portfolio.png" />
-  <link rel="stylesheet" href="../styles/skills.css" />
-  <link rel="stylesheet" href="../styles/nav-bar.css" />
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-</head>
+    <link rel="icon" href="../assets/portfolio.png" />
+    <link rel="stylesheet" href="../styles/skills.css" />
+    <link rel="stylesheet" href="../styles/nav-bar.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
+    <nav class="main-nav" data-aos="fade-down">
+      <h2 class="logo"></h2>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./skills.html" class="active">Skills</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- NAVBAR -->
-  <nav class="main-nav" data-aos="fade-down">
-    <h2 class="logo"></h2>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="./about.html">About</a></li>
-      <li><a href="./skills.html" class="active">Skills</a></li>
-      <li><a href="./projects.html">Projects</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <section class="page">
+      <!-- TECHNICAL SKILLS -->
+      <h1 data-aos="fade-right">Technical Skills</h1>
 
-  <!-- PAGE CONTENT -->
-  <section class="page">
+      <div class="grid">
+        <div class="card" data-aos="zoom-in">
+          <img src="../assets/html.png" alt="HTML" />
+          <p>HTML - 50%</p>
+          <div class="progress">
+            <div class="progress-bar" data-level="50"></div>
+          </div>
+        </div>
 
-    <!-- TECHNICAL SKILLS -->
-    <h1 data-aos="fade-right">Technical Skills</h1>
-    <div class="grid">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="../assets/css.png" alt="CSS" />
+          <p>CSS - 40%</p>
+          <div class="progress">
+            <div class="progress-bar" data-level="40"></div>
+          </div>
+        </div>
 
-      <div class="card" data-aos="zoom-in">
-        <img src="../assets/html.png" alt="HTML">
-        <p>HTML - 50%</p>
-        <div class="progress">
-          <div class="progress-bar" data-level="50"></div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="../assets/js.png" alt="JavaScript" />
+          <p>JavaScript - 45%</p>
+          <div class="progress">
+            <div class="progress-bar" data-level="45"></div>
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="../assets/fastapi.png" alt="FastAPI" />
+          <p>FastAPI - 50%</p>
+          <div class="progress">
+            <div class="progress-bar" data-level="50"></div>
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="400">
+          <img src="../assets/python.png" alt="Python" />
+          <p>Python - 50%</p>
+          <div class="progress">
+            <div class="progress-bar" data-level="50"></div>
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="500">
+          <img src="../assets/postgres.png" alt="PostgreSQL" />
+          <p>PostgreSQL - 45%</p>
+          <div class="progress">
+            <div class="progress-bar" data-level="45"></div>
+          </div>
         </div>
       </div>
 
-      <div class="card" data-aos="zoom-in" data-aos-delay="100">
-        <img src="../assets/css.png" alt="CSS">
-        <p>CSS - 40%</p>
-        <div class="progress">
-          <div class="progress-bar" data-level="40"></div>
+      <!-- ENGLISH SKILLS -->
+      <h1 data-aos="fade-right">English Skills</h1>
+
+      <div class="grid english-skills">
+        <div class="card" data-aos="fade-up">
+          <img src="../assets/reading.png" alt="Reading" />
+          <p>Reading<br />B2</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <img src="../assets/writing.png" alt="Writing" />
+          <p>Writing<br />B1</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <img src="../assets/listening.png" alt="Listening" />
+          <p>Listening<br />A1</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+          <img src="../assets/speaking.png" alt="Speaking" />
+          <p>Speaking<br />B1</p>
         </div>
       </div>
+    </section>
 
-      <div class="card" data-aos="zoom-in" data-aos-delay="200">
-        <img src="../assets/js.png" alt="JavaScript">
-        <p>JavaScript - 45%</p>
-        <div class="progress">
-          <div class="progress-bar" data-level="45"></div>
-        </div>
-      </div>
+    <footer data-aos="fade-up">© 2026 Sriram</footer>
 
-      <div class="card" data-aos="zoom-in" data-aos-delay="300">
-        <img src="../assets/fastapi.png" alt="FastAPI">
-        <p>FastAPI - 50%</p>
-        <div class="progress">
-          <div class="progress-bar" data-level="50"></div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- LIFE SKILLS -->
-    <h1 data-aos="fade-right">Life Skills</h1>
-    <div class="grid life-skills">
-
-      <div class="card" data-aos="flip-left">
-        <img src="../assets/communication.png" alt="Communication">
-        <p>Communication - 60%</p>
-        <div class="progress">
-          <div class="progress-bar" data-level="60"></div>
-        </div>
-      </div>
-
-      <div class="card" data-aos="flip-left" data-aos-delay="150">
-        <img src="../assets/presentation.png" alt="Presentation">
-        <p>Presentation - 70%</p>
-        <div class="progress">
-          <div class="progress-bar" data-level="70"></div>
-        </div>
-      </div>
-
-      <div class="card" data-aos="flip-left" data-aos-delay="300">
-        <img src="../assets/team work.png" alt="Team Collaboration">
-        <p>Team Collaboration - 65%</p>
-        <div class="progress">
-          <div class="progress-bar" data-level="65"></div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- ENGLISH SKILLS -->
-    <h1 data-aos="fade-right">English Skills</h1>
-    <div class="grid english-skills">
-
-      <div class="card" data-aos="fade-up">
-        <img src="../assets/reading.png" alt="Reading">
-        <p>Reading<br>B2</p>
-      </div>
-
-      <div class="card" data-aos="fade-up" data-aos-delay="100">
-        <img src="../assets/writing.png" alt="Writing">
-        <p>Writing<br>B1</p>
-      </div>
-
-      <div class="card" data-aos="fade-up" data-aos-delay="200">
-        <img src="../assets/listening.png" alt="Listening">
-        <p>Listening<br>A1</p>
-      </div>
-
-      <div class="card" data-aos="fade-up" data-aos-delay="300">
-        <img src="../assets/speaking.png" alt="Speaking">
-        <p>Speaking<br>B1</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- FOOTER -->
-  <footer data-aos="fade-up">© 2026 Sriram</footer>
-
-  <!-- SCRIPT -->
-  <script src="../js/skills.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 900,
-      once: true,
-      easing: "ease-in-out"
-    });
-  </script>
-
-</body>
+    <script src="../js/skills.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true,
+        easing: "ease-in-out",
+      });
+    </script>
+  </body>
 </html>
