@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #020617;
+  color: white;
+  font-family: system-ui, sans-serif;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.page h1 {
+  color: #38bdf8;
+  margin: 60px 0 30px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #0f172a;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #1e293b;
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.25);
+  border-color: #38bdf8;
+}
+
+.card img {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+.life-skills img,
+.english-skills img {
+  filter: invert(55%) sepia(80%) saturate(450%) hue-rotate(165deg);
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #cbd5f5;
+}
+
+.progress {
+  background: #020617;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: #38bdf8;
+  transition: width 1.2s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+  color: #94a3b8;
+}

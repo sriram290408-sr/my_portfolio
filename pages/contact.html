@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Sriram</title>
+
+    <link rel="icon" href="../assets/portfolio.png" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/nav-bar.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="main-nav" data-aos="fade-down">
+      <h2 class="logo"></h2>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./skills.html">Skills</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- CONTACT CARDS -->
+    <section class="page center" data-aos="fade-up">
+      <h2>Contact</h2>
+
+      <div class="grid">
+        <div
+          class="card"
+          onclick="window.location.href='mailto:sriram290408@gmail.com'"
+        >
+          <img src="../assets/mail.png" alt="Email" class="img-alter" />
+          <p>Email</p>
+          <small>sriram290408@gmail.com</small>
+        </div>
+
+        <div class="card" onclick="window.location.href='tel:+917305460664'">
+          <img src="../assets/phone.png" alt="Phone" class="img-alter"/>
+          <p>Phone</p>
+          <small>+91 73054 60664</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROFILES -->
+    <section class="page">
+      <h1 data-aos="fade-right">Social Profiles</h1>
+
+      <div class="grid">
+        <div
+          class="card"
+          onclick="window.open('https://github.com/sriram290408-sr','_blank')"
+        >
+          <img src="../assets/github.png" alt="GitHub" class="img-alter"/>
+          <p>GitHub</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://www.linkedin.com/in/sri-ram-679920350/','_blank')"
+        >
+          <img src="../assets/linkedin.png" alt="LinkedIn" />
+          <p>LinkedIn</p>
+        </div>
+
+        <div
+          class="card"
+          onclick="window.open('https://www.hackerrank.com/profile/sriram290408','_blank')"
+        >
+          <img src="../assets/hackerrank.png" alt="HackerRank" />
+          <p>HackerRank</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>© 2026 Sriram</footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 900, once: true, easing: "ease-in-out" });
+    </script>
+  </body>
+</html>
