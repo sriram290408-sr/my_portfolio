@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>About | Sriram</title>
@@ -20,26 +20,51 @@
       </ul>
     </nav>
 
-    <section class="page">
+    <section class="section-one">
       <h1 data-aos="fade-right">About Me</h1>
 
-      <p data-aos="fade-up">
-        I am Sriram, living in Chennai, and passionate about technology. I learnt
-        HTML, CSS, JavaScript, FastAPI, Node.js, andMongoDB and enjoy 
-        building projects that solve real-world problems.
-      </p>
+      <div class="about-text" data-aos="fade-up">
+        <p>
+          My name is <strong>Sriram</strong>. I live in Chennai and I am
+          passionate about technology and software development.<br /><br />
 
-      <p data-aos="fade-up" data-aos-delay="150">
-        I am confident in communication, teamwork, and presentation skills, and
-        I work both independently and collaboratively. I have completed projects
-        such as digital communication platforms, student management systems, and
-        static websites, which strengthened my practical skills.
-      </p>
+          My family has always supported me a lot. Because of their support, I
+          am able to take my own decisions and follow what I am truly interested
+          in. Now, I am happy and ready to take responsibility and support my
+          family in the future.<br /><br />
 
-      <p data-aos="fade-up" data-aos-delay="300">
-        My goal is to continuously learn and grow as a developer, building
-        innovative solutions that make a positive impact.
-      </p>
+          I completed my 12th standard last year. During my studies, I started
+          learning HTML by myself using YouTube resources and practiced
+          regularly on my own. After joining an academy, I learned more
+          programming languages and gained deeper knowledge about programming,
+          and how websites work. I continue practicing coding and improving my
+          web development skills every day.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-two">
+      <h2 data-aos="fade-right">Skills & Hobbies</h2>
+
+      <div class="card-container">
+        <div class="card" data-aos="fade-up">
+          <img src="../assets/editing.jpg" alt="Video Editing" />
+          <h3>Video Editing</h3>
+          <p>
+            I enjoy editing videos and creating quality content. I like
+            improving visuals, sound, and storytelling through editing.
+          </p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="150">
+          <img src="../assets/shortflim.jpg" alt="Short Film Making" />
+          <h3>Short Film Making</h3>
+          <p>
+            I am interested in short film making. I enjoy planning stories,
+            directing scenes, and creating creative projects.
+          </p>
+        </div>
+      </div>
     </section>
 
     <footer data-aos="fade-up">© 2026 Sriram</footer>
@@ -49,9 +74,8 @@
       AOS.init({
         duration: 900,
         once: true,
-        easing: "ease-in-out"
+        easing: "ease-in-out",
       });
     </script>
-    <script src="../js/nav.js"></script>
   </body>
 </html>
