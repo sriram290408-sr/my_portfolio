@@ -1,51 +1,56 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Sriram</title>
     <link rel="icon" href="../assets/portfolio.png" />
     <link rel="stylesheet" href="../styles/about.css" />
     <link rel="stylesheet" href="../styles/nav-bar.css" />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
-
   <body>
+    <!-- Navigation -->
     <nav class="main-nav" data-aos="fade-down">
-      <h2 class="logo"></h2>
-      <ul>
+      <h2 class="logo">Sriram</h2>
+      <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="./about.html" class="active">About</a></li>
         <li><a href="./skills.html">Skills</a></li>
         <li><a href="./projects.html">Projects</a></li>
         <li><a href="./contact.html">Contact</a></li>
       </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
 
+    <!-- About Section -->
     <section class="section-one">
       <h1 data-aos="fade-right">About Me</h1>
-
       <div class="about-text" data-aos="fade-up">
         <p>
           My name is <strong>Sriram</strong>. I live in Chennai and I am
           passionate about technology and software development.<br /><br />
-
           My family has always supported me a lot. Because of their support, I
           am able to take my own decisions and follow what I am truly interested
           in. Now, I am happy and ready to take responsibility and support my
-          family in the future.<br /><br />
-
+          family in the future.<br /> <br />
           I completed my 12th standard last year. During my studies, I started
           learning HTML by myself using YouTube resources and practiced
-          regularly on my own. After joining an academy, I learned more
-          programming languages and gained deeper knowledge about programming,
-          and how websites work. I continue practicing coding and improving my
-          web development skills every day.
+          regularly. After joining an academy, I learnt more programming
+          languages and gained deeper knowledge about programming and how
+          websites work. I continue practicing coding and improving my web
+          development skills every day.
         </p>
       </div>
     </section>
 
+    <!-- Hobbies Section -->
     <section class="section-two">
-      <h2 data-aos="fade-right">Skills & Hobbies</h2>
-
+      <h2 data-aos="fade-right">Hobbies</h2>
       <div class="card-container">
         <div class="card" data-aos="fade-up">
           <img src="../assets/editing.jpg" alt="Video Editing" />
@@ -55,7 +60,6 @@
             improving visuals, sound, and storytelling through editing.
           </p>
         </div>
-
         <div class="card" data-aos="fade-up" data-aos-delay="150">
           <img src="../assets/shortflim.jpg" alt="Short Film Making" />
           <h3>Short Film Making</h3>
@@ -67,14 +71,58 @@
       </div>
     </section>
 
+    <!-- Achievements Section -->
+    <section class="achievements" data-aos="fade-up">
+      <h2 class="section-title">Achievements</h2>
+
+      <div class="achievement">
+        <img src="../assets/cuet.png" alt="CUET Exam" />
+        <div class="achievement-text">
+          <h3>CUET Exam</h3>
+          <h4>
+            The CUET has been an enriching experience that strengthened my
+            problem-solving, time management, and analytical skills. <br />
+            Preparing for it taught me how to tackle complex questions and adapt
+            quickly to new patterns in exams. <br />
+            This achievement gave me the confidence to face academic challenges
+            and skills that I now apply in coding and web development projects.
+          </h4>
+        </div>
+      </div>
+
+      <div class="achievement">
+        <img src="../assets/fssa.jpg" alt="Fresh Works STS Software Academy" />
+        <div class="achievement-text">
+          <h3>Fresh Works STS Software Academy</h3>
+          <h4>
+            Scoring 75% in FSAT enabled me to join Fresh Works STS Software
+            Academy, where I significantly improved my programming and
+            problem-solving skills. During the academy, I learnt languages in
+            HTML, CSS, JavaScript, and Python, and applied them to practical
+            projects. <br />
+            I also gained experience in teamwork, debugging, and
+            project management, which helped me understand how real-world
+            software development works. This experience not only sharpened my
+            technical skills but also prepared me to take on independent and
+            collaborative projects confidently.
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer data-aos="fade-up">© 2026 Sriram</footer>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 900,
-        once: true,
-        easing: "ease-in-out",
+      AOS.init({ duration: 900, once: true, easing: "ease-in-out" });
+
+      // Hamburger menu toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
       });
     </script>
   </body>

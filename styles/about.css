@@ -75,14 +75,57 @@ body {
   line-height: 1.6;
 }
 
-@media (max-width: 992px) {
-  .card-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.achievements {
+  padding: 4rem 2rem;
+  text-align: start;
+  text-justify: auto;
+  padding: 150px;
 }
 
-@media (max-width: 600px) {
-  .card-container {
-    grid-template-columns: 1fr;
+.achievements .section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #38bdf8;
+  text-align: start;
+  margin-left: 2rem;
+}
+
+.achievement {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  gap: 20px;
+}
+
+.achievement img {
+  width: 350px;
+  height: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.achievement-text h3 {
+  font-size: 1.5rem;
+  color: #38bdf8;
+}
+
+.achievement-text h4 {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .achievement {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .achievement img {
+    width: 100%;
+    max-width: 300px;
   }
 }
